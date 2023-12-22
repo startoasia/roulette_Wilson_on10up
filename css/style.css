@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.wrapper {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.content {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.sticky {
+    margin: 0 auto;
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    max-width: 1920px;
+    width: 100%;
+    z-index: 99;
+}
+
+.nav_bar {
+    box-shadow: 0px 2px 4px #4472e8;
+}
+
+.timebox {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    padding-left: 28%;
+}
+
+.timer {
+    font-size: 44px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 8px;
+    flex: 1;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 1000px) {
+    .timer {
+        font-size: 4.5vw;
+        letter-spacing: 4px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .timer {
+        letter-spacing: 2px;
+    }
+}
+
+.link1 {
+    width: 21.5%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 34%;
+}
+
+.link2 {
+    width: 21.5%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 55.5%;
+}
+
+.link3 {
+    width: 21.5%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 77%;
+}
+
+.fv-pds {
+    width: 92%;
+    position: absolute;
+    top: 35%;
+    left: 4%;
+    transform: translateY(10%);
+    opacity: 0;
+    transition: all .5s;
+}
+
+.fv-sale49 {
+    width: 28%;
+    position: absolute;
+    top: 32%;
+    left: 3%;
+}
+
+.roulette {
+    width: 142%;
+    height: 58%;
+    position: absolute;
+    top: 42%;
+    left: -21%;
+    /* background: #00000070; */
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.s2-btn {
+    width: 17%;
+    position: absolute;
+    top: 32%;
+    left: 78%;
+    cursor: pointer;
+}
+
+.s2-circle_bg {
+    width: 92%;
+    position: absolute;
+    top: 10%;
+    left: 4%;
+    transition: all .5s;
+}
+
+.s2-circle_inside {
+    width: 62%;
+    position: absolute;
+    top: 41%;
+    left: 19%;
+}
+
+.s2-circle_pds {
+    width: 93%;
+    position: absolute;
+    top: 7%;
+    left: 3.5%;
+    transition: all .5s;
+}
+
+.s2-circle_txt {
+    width: 29%;
+    position: absolute;
+    bottom: 3%;
+    left: 35.5%;
+}
+
+.mid-offerpds {
+    width: 85%;
+    position: absolute;
+    top: 34%;
+    left: 8%;
+}
+
+.mid-sale49 {
+    width: 25%;
+    position: absolute;
+    top: 26%;
+    left: 52%;
+}
+
+.mid-btn {
+    width: 96%;
+    position: absolute;
+    bottom: 7%;
+    left: 2%;
+}
+
+.s8-1 {
+    width: 40%;
+    position: absolute;
+    top: 21%;
+    left: 12%;
+}
+
+.s8-2 {
+    width: 41%;
+    position: absolute;
+    top: 59%;
+    left: 48%;
+}
+
+.s8-3 {
+    width: 43%;
+    position: absolute;
+    top: 71%;
+    left: 5%;
+}
+
+.s11-ball1 {
+    width: 26.5%;
+    position: absolute;
+    top: 25%;
+    left: 9%;
+    z-index: 1;
+}
+
+.s11-ball2 {
+    width: 18.5%;
+    position: absolute;
+    top: 41%;
+    left: 31%;
+    z-index: 1;
+}
+
+.s11-ball3 {
+    width: 22.5%;
+    position: absolute;
+    top: 33%;
+    left: 49%;
+    z-index: 2;
+}
+
+.s11-ball4 {
+    width: 26.5%;
+    position: absolute;
+    top: 23%;
+    left: 66%;
+    z-index: 1;
+}
+
+.s11-line1 {
+    width: 25%;
+    position: absolute;
+    top: 43%;
+    left: 22%;
+    z-index: 1;
+    transform-origin: bottom right;
+}
+
+.s11-line2 {
+    width: 6%;
+    position: absolute;
+    top: 53%;
+    left: 41%;
+    z-index: 1;
+    transform-origin: bottom right;
+}
+
+.s11-line3 {
+    width: 11%;
+    position: absolute;
+    top: 49%;
+    left: 47%;
+    z-index: 1;
+    transform-origin: bottom left;
+}
+
+.s11-line4 {
+    width: 30%;
+    position: absolute;
+    top: 41%;
+    left: 47%;
+    z-index: 1;
+    transform-origin: bottom left;
+}
+
+.s11-gif {
+    width: 86%;
+    position: absolute;
+    top: 58%;
+    left: 7%;
+}
+
+.s13-gold {
+    width: 87%;
+    position: absolute;
+    top: 38%;
+    left: 6.5%;
+}
+
+.s13-reward1 {
+    width: 27%;
+    position: absolute;
+    top: 74%;
+    left: 7.5%;
+}
+
+.s13-reward2 {
+    width: 24%;
+    position: absolute;
+    top: 74%;
+    left: 37.5%;
+}
+
+.s13-reward3 {
+    width: 27%;
+    position: absolute;
+    top: 74%;
+    left: 64.5%;
+}
+
+.slider1 {
+    width: 56%;
+    position: absolute;
+    top: 34%;
+    left: 22%;
+}
+
+.offer5060_pds {
+    width: 84%;
+    position: absolute;
+    top: 19.5%;
+    left: 8%;
+}
+
+.offer5060_give1 {
+    width: 6.5%;
+    position: absolute;
+    top: 23.5%;
+    left: 63.5%;
+}
+
+.offer5060_give2 {
+    width: 6.5%;
+    position: absolute;
+    top: 37.5%;
+    left: 63.5%;
+}
+
+.offer5060_btn {
+    width: 96%;
+    position: absolute;
+    bottom: 19.5%;
+    left: 2%;
+}
+
+.offer4860_pds {
+    width: 80%;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+
+.offer4860_give1 {
+    width: 6.5%;
+    position: absolute;
+    top: 17.5%;
+    left: 75.5%;
+}
+
+.offer4860_give2 {
+    width: 6.5%;
+    position: absolute;
+    top: 37%;
+    left: 72.5%;
+}
+
+.offer4860_btn {
+    width: 96%;
+    position: absolute;
+    bottom: 24%;
+    left: 2%;
+}
+
+.offer2640_pds {
+    width: 78%;
+    position: absolute;
+    top: 17%;
+    left: 11%;
+}
+
+.offer2640_give1 {
+    width: 6.5%;
+    position: absolute;
+    top: 19%;
+    left: 69%;
+}
+
+.offer2640_btn {
+    width: 96%;
+    position: absolute;
+    bottom: 24.5%;
+    left: 2%;
+}
